@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: black;
+        }
+        header::before {
+            background: url(https://picsum.photos/1200) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: .5;
+        }
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 5px 15px;
+            font-size: 25px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 5px 255px;
+            text-align: center;
+            height: 455px;
+            justify-content: center;
+        }
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Blog</li>
+                <li class="item">About</li>
+                <li class="item">Contact</li>
+                <li class="item">News</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Tamim's coding world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium ullam itaque nihil reiciendis veniam asperiores harum. Molestiae, aspernatur iusto doloremque illo ea molestias ab. Ut vitae, eos repudiandae quisquam esse quos repellendus eum perferendis?</p>
+    </section>
+</body>
+</html>
